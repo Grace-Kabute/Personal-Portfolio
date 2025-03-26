@@ -13,3 +13,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
         })
     })
 })
+
+function dropfunction() {
+    const hambuger = document.querySelector('.hambuger');
+    const content = document.querySelector('.dropdown-content');
+
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        hambuger.innerHTML = '<i class="fa fa-close fa-2x"></i>';
+    } else {
+        content.style.display = "none";
+        hambuger.innerHTML = '<i class="fa fa-bars fa-2x"></i>';
+    }
+}

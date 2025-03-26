@@ -4,64 +4,84 @@
   box-sizing: border-box;
 }
 .container{
-  background-color: #212529;
+  background-color: #343a40ed;
+  color: white;
   display: grid;
-  /* grid-template-columns: 20% 1fr; */
-  grid-template-rows: 10% 1fr;
   margin: 0;
   overflow: hidden;
-  height: 100vh;
 }
-.navigation{
+nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-.navigation a{
+.dropdown-content{
+  position: fixed;
+  top: 7%;
+  display: none;
+  width: 100vw;
+  max-width: 100%;
+  background-color:  #212529;
+  z-index: 3;
+  height: 30%;
+}
+.dropdown-content a{
   color: white;
   text-decoration: none;
   display: flex;
   gap: 1.25rem;
+  padding: .8rem 1rem;
   align-items: center;
   width: 100%;
+  font-size: larger;
 }
-.navigation a span{
-  display: none;
-}
-.navigation a:hover{
+.dropdown-content a:hover{
 color: lightgreen;
 }
-.navigation a i {
+.dropdown-content ul li{
+  list-style: none;
+}
+.dropdown-content a i {
   width: 1.5rem;
   text-align: center;
   flex-shrink: 0;
 }
 hr{
-  display: none;
+display: none;
+}
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: larger;
+  background-color: #212529;
+  height: 65px;
+}
+.top-nav h2::after{
+  content: '.';
+  display: inline-block;
+  color: lightgreen;
+  width: 10px;
+  height: 10px;
 }
 main{
-  background-color: #343a40;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-  padding: min(5em, 8%);
-  line-height: 24px;
+  line-height: 32px;
   margin: 1rem;
 }
 h1{
   margin-bottom: 38px;
 }
-.content {
-  display: none;
-  color: white;
-}
 .content.active {
   display: block;
   max-width: 100%;
-  height: 100vh;
 }
 #home{
   align-items: center;
+  text-align: center;
+  margin: auto;
+  font-size: larger;
 }
 span{
   color: lightgreen;
@@ -69,11 +89,46 @@ span{
 .home-1{
   max-width: 400px;
 }
+.home-1 h2{
+  margin: 1.5rem 0;
+  color: lightgreen;
+}
 .image img{
   border-radius: 50%;
-  
+  margin: 1.5rem 0;
 }
 .image{
   position: relative;
   z-index: 2;
+}
+.btn-1{
+  background-color: lightgreen;
+  border-radius: 10px;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+}
+.btn-1:hover{
+  background-color: rgba(4, 70, 4, 0.849);
+}
+.chatbot{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+.about-1{
+  margin: 2rem 0;
+}
+.about-1 img{
+  border-radius: 10px;
+  object-fit: cover;
+}
+.projects-1{
+  margin: 5rem 0;
+}
+.projects-1 img{
+width: 100%;
+object-fit: cover;
+mix-blend-mode: overlay;
+border-radius: 10px;
 }
