@@ -31,11 +31,11 @@
         </div>
       </nav>
     </header>
-    <button class="chatbot"><i class="fas fa-robot fa-3x"></i></button>
+    <button class="chatbot">Ask AI</button>
     <main class="swiper">
       <section class="content active" id="home">
         <div class="image">
-          <img src="./images/heyy.jpg" alt="#me" width="350" height="350">
+          <img src="./images/heyy.jpg" alt="#me" loading="lazy" width="330" height="330">
         </div>
         <div class="home-1">
           <h3>software Engineer</h3>
@@ -43,58 +43,77 @@
           <p>
             Dedicated to creating clean, functional, and user-friendly web experiences. I turn ideas into reality with clean code and creative design. Take a look around and see what I’ve been working on!
           </p>
-          <button class="btn-1">Contact me</button>
+          <button class="btn first"><a href="#">Contact me</a></button>
         </div>
       </section>
       <section class="content" id="about">
+        <h2>More about me</h2>
         <div class="about-1">
-          <img src="./images/alarm.jpg" alt="about me" width="150" height="150" style="float: left; margin-right: 1rem;">
+          <img src="./images/alarm.jpg" alt="about me" loading="lazy" width="150" height="150" style="float: left; margin-right: 1rem;">
           <p>A software engineer with an economics and statistics degree, which basically means I see the world in both code and numbers.I thrive at the intersection of tech and innovation. Always looking for ways to solve real-world problems. My goal? To build tech that makes life easier, more connected and way more interesting.</p>
         </div>
       </section>
       <section class="content projects-1" id="projects">
-        <div>
-          <img src="./images/shell.jpg" alt="simple shell" height="250">
-          <details>
-            <summary>Simple shell</summary>
-            <p>A minimalist Unix shell written in C, designed to execute commands, manage processes, and handle system calls. This project was inspired by a desire to understand how command-line interpreters work at a low level, diving deep into OS internals, memory management, and process control.</p>
-          </details>
+        <h2>Projects</h2>
+        <div class="projects-2">
+          <img src="./images/shell.jpg" alt="simple shell" loading="lazy" height="250">
+          <h3>Simple Shell</h3>
+            <div class="stack one">
+              <p>C programming</p>
+            </div>
+            <a href="">source code ...</a>
+            <p>Designed to execute commands, manage processes, and handle system calls. Inspired by a desire to understand how command-line interpreters work at a low level.</p>
         </div>
-        <div>
-          <img src="./images/schooll.jpg" alt="school" height="250"></img>
-          <details>
-            <summary>School Management system</summary>
-            <p>A end to end project built with React (frontend) and Node.js (backend) to streamline school operations. My focus was on crafting an intuitive and responsive UI, while the standout feature was role-based authentication, ensuring secure access for admins, teachers, and students. This project strengthened my front-end skills in React and reinforced best practices for user authentication and seamless UI/UX design.</p>
-          </details>
+        <div class="projects-2">
+          <img src="./images/schooll.jpg" alt="school" loading="lazy" height="250"></img>
+            <h3>School Management system</h3>
+            <div class="stack two">
+              <p><i class="fa-brands fa-react"></i> React</p>
+              <p><i class="fab fa-node-js"></i>  Nodejs</p>
+            </div>
+            <a href="">source code ...</a>
+            <p>A end to end project built to streamline school operations. The standout feature was role-based authentication, ensuring secure access for admins, teachers, and students.</p>
+
         </div>
-        <div>
+        <div class="projects-2">
           <img src="./images/recipe.jpg" alt="Recipe book" height="250">
-          <details>
-            <summary>Recipe book</summary>
-            <p>A dynamic web app built with Vanilla JavaScript, designed to explore and display recipes using external APIs. This project focused on integrating third-party APIs to fetch and present real-time recipe data, enhancing my skills in API consumption, asynchronous JavaScript, and user-friendly UI design.</p>
-          </details>
+            <h3>Recipe book</h3>
+            <div class="stack three">
+              <p><i class="fa-brands fa-html5"></i> html</p>
+              <p><i class="fa-brands fa-css3-alt"></i> css</p>
+              <p><i class="fa-brands fa-js"></i> Vanilla JS</p>
+            </div>
+            <a href="">source code ...</a>
+            <p>A dynamic web app built with Vanilla JavaScript, designed to explore and display recipes using external APIs. This project focused on integrating third-party APIs to fetch and present real-time recipe data.</p>
         </div>
-        <div>
-          <img src="./images/loanbuddy.jpg" alt="loan buddy" height="250">
-          <details>
-            <summary>Loan Buddy.</summary>
-            <p>A peer-to-peer lending platform designed for personal loans between friends and family, with M-Pesa integration for seamless transactions. Users can track loans, set custom terms, and manage repayments effortlessly. This project aims to simplify informal lending while promoting accountability. Built with [planned tech stack: React, Node.js, etc.], LoanBuddy is a step toward revolutionizing personal finance management. (Coming soon!)</p>
-          </details>
+        <div class="projects-2">
+          <img src="./images/pay.jpg" alt="LoanBuddy" loading="lazy" height="250">
+            <h3>Loan Buddy.</h3>
+            <div class="stack four">
+              <p> Nextjs</p>
+              <p> Material UI</p>
+            </div>
+            <a href="">source code ...</a>
+            <p>A peer-to-peer lending platform designed for personal loans between friends and family, with M-Pesa Daraja API integration for seamless transactions.LoanBuddy is a step toward revolutionizing personal finance management.</p>
+
         </div>
-        <div>
-          <img src="./images/human.jpg" alt="hello friend"  height="250">
-          <details>
-            <summary>Hello friend</summary>
-            <p>A mental wellness platform that connects people for peer-to-peer support using AI-driven matching. Whether you can’t afford therapy or simply want an informal, judgment-free space to talk, Hello Friend helps you find others facing similar struggles. Unlike traditional therapy apps, it focuses on emotional connection and community-driven healing, making mental wellness support more accessible and human. (Coming soon!)</p>
-          </details>
+        <div class="projects-2">
+          <img src="./images/human.jpg" alt="hello friend" loading="lazy" height="250">
+            <h3>Hello friend</h3>
+            <div class="stack five">
+              <p>Nextjs</p>
+              <p>Material UI</p>
+              <p>AI integration</p>
+              <p>MongoDB</p>
+            </div>
+            <a href="">source code ...</a>
+            <p>A mental wellness platform using AI to connect people for peer-to-peer support, fostering community-driven healing beyond traditional therapy.</p>
         </div>
-        <div>
+        <!-- <div>
           <img src="./images/pay.jpg" alt="schoolpay" height="250">
-          <details>
-            <summary>School pay</summary>
+            <h3>School pay</h3>
             <p>A seamless school fees payment and tracking system integrating Kenyan banks and M-Pesa. Designed for parents and school accountants, it enables direct, hassle-free fee payments while providing real-time transaction tracking. This project simplifies financial management in education, ensuring transparency and efficiency.</p>
-          </details>
-        </div>
+        </div> -->
       </section>
       <!-- <section class="content" id="resume">
         <h2>My Resume</h2>
@@ -130,32 +149,44 @@
           </div>
         </div>
       </section> -->
-      <section class="content" id="contact">
-        <h2>Contact Me</h2>
+      <section class="content contact" id="contact">
+        <h2>Get in touch</h2>
         <div>
-          <p>Let's connect! Feel free to reach out for collaborations, job opportunities, or just a chat.</p>
           <div class="contact-info">
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">Your LinkedIn</a></p>
-            <p>GitHub: <a href="https://github.com/Grace-Kabute" target="_blank">Grace-Kabute</a></p>
+            <p><a href="mailto:kabutemuthobi@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></p>
+            <p><a href="https://www.linkedin.com/in/grace-kabute/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
+            <p><a href="https://github.com/Grace-Kabute" target="_blank"><i class="fa-brands fa-github"></i> github</a></p>
+            <p><a href="https://drive.google.com/file/d/1ojdNrWd9FWPfmTxhNfbHSpaz6eEfntsL/view?usp=sharing" target="_blank"><i class="fa fa-file"></i> Resume</a></p>
           </div>
         </div>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-          
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-          
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-          
-          <button type="submit">Send Message</button>
+        <form action="" method="POST">
+          <input type="text" id="name" name="name" required placeholder="Name">
+          <input type="email" id="email" name="email" required placeholder="Email">
+          <textarea id="message" name="message" rows="4" required placeholder="write a message"></textarea>
+          <button type="submit" class="btn">Send Message</button>
         </form>
       
 
       </section>
     </main>
+    <footer class="foo">
+      <p>one project at a time</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/your-profile" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://twitter.com/your-profile" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://medium.com/@your-profile" target="_blank">
+          <i class="fa-brands fa-medium"></i>
+        </a>
+      </div>
+      <p><i>© 2025 KabuteGrace.All rights reserved</i></p>  
+    </footer>
   </div>
   <script src="./App.js"></script>
 </body>
