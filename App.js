@@ -57,3 +57,28 @@ function dropfunction() {
         hambuger.innerHTML = '<i class="fa fa-bars fa-2x"></i>';
     }
 }
+
+const flipper = document.querySelector("#swiper");
+const links = document.querySelectorAll(".vertical a");
+
+links.forEach(link => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const target = event.currentTarget.getAttribute("data-target");
+
+    if (!target) return; // Ignore clicks on links without a target
+
+    const rotations = {
+      home: "rotateY(0deg)",
+      about: "rotateY(180deg)",
+      projects: "rotateY(0deg)",
+      contact: "rotateY(-180deg"
+    };
+
+    flipper.style.transition = "transform 0.8s ease-in-out"; // Smooth flip effect
+    flipper.style.transform = rotations[target] || "rotateY(0deg)";
+  });
+});
+
+
+
