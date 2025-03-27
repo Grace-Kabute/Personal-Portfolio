@@ -135,11 +135,16 @@ span{
 .about-1{
   margin: 2rem 0;
 }
+.about-2{
+  width: 400px;
+}
 .about-1 img{
   float: right;
   margin-right: 1rem;
   border-radius: 10px;
   object-fit: cover;
+  width: 250px;
+  height: 250px;
 }
 .projects-1{
   margin: 5rem 0;
@@ -154,6 +159,14 @@ span{
 .projects-2 p{
   text-align: justify;
   hyphens: auto;
+}
+.projects-2 a{
+  color: rgba(144, 238, 144, 0.671);
+  text-decoration: none;
+  font-style: italic;
+}
+.projects-2 a:hover{
+  text-decoration: underline;
 }
 .projects-1 img{
 width: 100%;
@@ -356,7 +369,7 @@ input, textarea{
       padding: 15px;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      text-align: center;
+      text-align: start;
     }
     .contact{
       transform: rotateY(180deg) translateZ(50px);
