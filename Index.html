@@ -9,33 +9,45 @@
 </head>
 <body>
   <div class="container">
-    <header class="navigation">
+    <header>
       <div class="top-nav">
-        <h2>Kabute G</h2>
-        <button class="hambuger" onclick=dropfunction()><i class="fa fa-bars fa-2x"></i></button>
-      </div>
+        <div class="navigation">
+          <h2>Kabute G</h2>
+          <button class="hambuger" onclick=dropfunction()><i class="fa fa-bars fa-2x"></i></button>
+          <div class="vertical">
+            <ul>
+            <li><a href="#" data-target="home"><i class="fa fa-home"></i> Home</a></li>
+            <hr>
+            <li><a href="#" data-target="about"><i class="fa fa-user"></i>  About</a></li>
+            <hr>
+            <li><a href="#" data-target="projects"><i class="fa fa-laptop-code"></i>  Projects</a></li>
+            <hr>
+            <li><a href="#" data-target="contact"><i class="fa fa-phone"></i>  Contact</a></li>
+            <hr>
+            </ul>
+          </div>
+        </div>
       <nav>
         <div class="dropdown-content">
           <ul>
           <li><a href="#" data-target="home"><i class="fa fa-home"></i> Home</a></li>
           <hr>
-          <li><a href="#" data-target="about"><i class="fa fa-user"></i>  About me</a></li>
+          <li><a href="#" data-target="about"><i class="fa fa-user"></i>  About</a></li>
           <hr>
           <li><a href="#" data-target="projects"><i class="fa fa-laptop-code"></i>  Projects</a></li>
           <hr>
-          <li><a href="#" data-target="resume"><i class="fa fa-file"></i>  Resume</a></li>
-          <hr>
-          <li><a href="#" data-target="contact"><i class="fa fa-phone"></i>  Contact me </a></li>
+          <li><a href="#" data-target="contact"><i class="fa fa-phone"></i>  Contact </a></li>
           <hr>
           </ul>
         </div>
       </nav>
+    </div>
     </header>
     <button class="chatbot">Ask AI</button>
     <main class="swiper">
-      <section class="content active" id="home">
+      <section class="content active home" id="home">
         <div class="image">
-          <img src="./images/heyy.jpg" alt="#me" loading="lazy" width="330" height="330">
+          <img src="./images/heyy.jpg" alt="#me" loading="lazy" width="300" height="300">
         </div>
         <div class="home-1">
           <h3>software Engineer</h3>
@@ -49,109 +61,90 @@
       <section class="content" id="about">
         <h2>More about me</h2>
         <div class="about-1">
-          <img src="./images/alarm.jpg" alt="about me" loading="lazy" width="150" height="150" style="float: left; margin-right: 1rem;">
-          <p>A software engineer with an economics and statistics degree, which basically means I see the world in both code and numbers.I thrive at the intersection of tech and innovation. Always looking for ways to solve real-world problems. My goal? To build tech that makes life easier, more connected and way more interesting.</p>
-        </div>
+          <img src="./images/alarm.jpg" alt="about me" loading="lazy" width="150" height="150">
+          <div class="about-2">
+            <p>A software engineer with an economics and statistics degree, which basically means I see the world in both code and numbers.I thrive at the intersection of tech and innovation. Always looking for ways to solve real-world problems. My goal? To build tech that makes life easier, more connected and way more interesting.</p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/your-profile" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://twitter.com/your-profile" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://medium.com/@your-profile" target="_blank">
+                <i class="fa-brands fa-medium"></i>
+              </a>
+            </div>
+            </div>
+          </div>
       </section>
       <section class="content projects-1" id="projects">
         <h2>Projects</h2>
-        <div class="projects-2">
-          <img src="./images/shell.jpg" alt="simple shell" loading="lazy" height="250">
-          <h3>Simple Shell</h3>
-            <div class="stack one">
-              <p>C programming</p>
+        <div class="projects-container">
+            <div class="projects-2">
+                <img src="./images/shell.jpg" alt="simple shell" loading="lazy" height="250">
+                <h3>Simple Shell</h3>
+                <div class="stack one">
+                    <p>C programming</p>
+                </div>
+                <a href="">source code ...</a>
+                <p>Designed to execute commands, manage processes, and handle system calls. Inspired by a desire to understand how command-line interpreters work at a low level.</p>
             </div>
-            <a href="">source code ...</a>
-            <p>Designed to execute commands, manage processes, and handle system calls. Inspired by a desire to understand how command-line interpreters work at a low level.</p>
+    
+            <div class="projects-2">
+                <img src="./images/schooll.jpg" alt="school" loading="lazy" height="250">
+                <h3>School Management system</h3>
+                <div class="stack two">
+                    <p><i class="fa-brands fa-react"></i> React</p>
+                    <p><i class="fab fa-node-js"></i> Nodejs</p>
+                </div>
+                <a href="">source code ...</a>
+                <p>An end-to-end project built to streamline school operations. The standout feature was role-based authentication, ensuring secure access for admins, teachers, and students.</p>
+            </div>
+    
+            <div class="projects-2">
+                <img src="./images/recipe.jpg" alt="Recipe book" height="250">
+                <h3>Recipe book</h3>
+                <div class="stack three">
+                    <p><i class="fa-brands fa-html5"></i> HTML</p>
+                    <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
+                    <p><i class="fa-brands fa-js"></i> Vanilla JS</p>
+                </div>
+                <a href="">source code ...</a>
+                <p>A dynamic web app built with Vanilla JavaScript, designed to explore and display recipes using external APIs. This project focused on integrating third-party APIs to fetch and present real-time recipe data.</p>
+            </div>
+    
+            <div class="projects-2">
+                <img src="./images/pay.jpg" alt="LoanBuddy" loading="lazy" height="250">
+                <h3>Loan Buddy.</h3>
+                <div class="stack four">
+                    <p>Nextjs</p>
+                    <p>Material UI</p>
+                </div>
+                <a href="">source code ...</a>
+                <p>A peer-to-peer lending platform designed for personal loans between friends and family, with M-Pesa Daraja API integration for seamless transactions. LoanBuddy is a step toward revolutionizing personal finance management.</p>
+            </div>
+    
+            <div class="projects-2">
+                <img src="./images/human.jpg" alt="hello friend" loading="lazy" height="250">
+                <h3>Hello friend</h3>
+                <div class="stack five">
+                    <p>Nextjs</p>
+                    <p>Material UI</p>
+                    <p>AI integration</p>
+                    <p>MongoDB</p>
+                </div>
+                <a href="">source code ...</a>
+                <p>A mental wellness platform using AI to connect people for peer-to-peer support, fostering community-driven healing beyond traditional therapy.</p>
+            </div>
         </div>
-        <div class="projects-2">
-          <img src="./images/schooll.jpg" alt="school" loading="lazy" height="250"></img>
-            <h3>School Management system</h3>
-            <div class="stack two">
-              <p><i class="fa-brands fa-react"></i> React</p>
-              <p><i class="fab fa-node-js"></i>  Nodejs</p>
-            </div>
-            <a href="">source code ...</a>
-            <p>A end to end project built to streamline school operations. The standout feature was role-based authentication, ensuring secure access for admins, teachers, and students.</p>
-
-        </div>
-        <div class="projects-2">
-          <img src="./images/recipe.jpg" alt="Recipe book" height="250">
-            <h3>Recipe book</h3>
-            <div class="stack three">
-              <p><i class="fa-brands fa-html5"></i> html</p>
-              <p><i class="fa-brands fa-css3-alt"></i> css</p>
-              <p><i class="fa-brands fa-js"></i> Vanilla JS</p>
-            </div>
-            <a href="">source code ...</a>
-            <p>A dynamic web app built with Vanilla JavaScript, designed to explore and display recipes using external APIs. This project focused on integrating third-party APIs to fetch and present real-time recipe data.</p>
-        </div>
-        <div class="projects-2">
-          <img src="./images/pay.jpg" alt="LoanBuddy" loading="lazy" height="250">
-            <h3>Loan Buddy.</h3>
-            <div class="stack four">
-              <p> Nextjs</p>
-              <p> Material UI</p>
-            </div>
-            <a href="">source code ...</a>
-            <p>A peer-to-peer lending platform designed for personal loans between friends and family, with M-Pesa Daraja API integration for seamless transactions.LoanBuddy is a step toward revolutionizing personal finance management.</p>
-
-        </div>
-        <div class="projects-2">
-          <img src="./images/human.jpg" alt="hello friend" loading="lazy" height="250">
-            <h3>Hello friend</h3>
-            <div class="stack five">
-              <p>Nextjs</p>
-              <p>Material UI</p>
-              <p>AI integration</p>
-              <p>MongoDB</p>
-            </div>
-            <a href="">source code ...</a>
-            <p>A mental wellness platform using AI to connect people for peer-to-peer support, fostering community-driven healing beyond traditional therapy.</p>
-        </div>
-        <!-- <div>
-          <img src="./images/pay.jpg" alt="schoolpay" height="250">
-            <h3>School pay</h3>
-            <p>A seamless school fees payment and tracking system integrating Kenyan banks and M-Pesa. Designed for parents and school accountants, it enables direct, hassle-free fee payments while providing real-time transaction tracking. This project simplifies financial management in education, ensuring transparency and efficiency.</p>
-        </div> -->
-      </section>
-      <!-- <section class="content" id="resume">
-        <h2>My Resume</h2>
-  
-        <div class="resume-container">
-          <div class="resume-text">
-            <p>Download my resume below or browse through my experience, skills, and education.</p>
-            <a href="./docs/Grace-Kabute-Resume.pdf" download class="resume-btn">Download Resume</a>
-          </div>
-      
-          <div class="resume-grid">
-            <div class="resume-item">
-              <h3>Experience</h3>
-              <p><strong>Software Engineer Intern</strong> - [Company Name] (202X - Present)</p>
-              <p>Building scalable web applications, working with React, Node.js, and APIs.</p>
-            </div>
-      
-            <div class="resume-item">
-              <h3>Skills</h3>
-              <ul>
-                <li>Front-End: React, JavaScript, HTML, CSS</li>
-                <li>Back-End: Node.js, Python, C</li>
-                <li>APIs & Databases: RESTful APIs, MongoDB, MySQL</li>
-                <li>Other: Git, Agile, UX/UI Principles</li>
-              </ul>
-            </div>
-      
-            <div class="resume-item">
-              <h3>Education</h3>
-              <p><strong>Degree in Economics & Statistics</strong> - University of Nairobi</p>
-              <p><strong>Software Engineering</strong> - ALX Africa</p>
-            </div>
-          </div>
-        </div>
-      </section> -->
+    </section>
       <section class="content contact" id="contact">
-        <h2>Get in touch</h2>
         <div>
+          <h2>Get in touch</h2>
           <div class="contact-info">
             <p><a href="mailto:kabutemuthobi@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></p>
             <p><a href="https://www.linkedin.com/in/grace-kabute/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
@@ -165,12 +158,9 @@
           <textarea id="message" name="message" rows="4" required placeholder="write a message"></textarea>
           <button type="submit" class="btn">Send Message</button>
         </form>
-      
-
       </section>
     </main>
     <footer class="foo">
-      <p>one project at a time</p>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/your-profile" target="_blank">
           <i class="fa-brands fa-linkedin"></i>

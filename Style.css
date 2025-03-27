@@ -7,20 +7,42 @@
 .container{
   background-color: #343a40ed;
   color: white;
-  display: grid;
   margin: 0;
   overflow: hidden;
   padding-top: 64px;
 }
-nav{
+/* nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+} */
+.navigation{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: larger;
+  background-color: #212529;
+  width: 100%;
+  height: 65px;
+  z-index: 10;
+}
+.navigation h2::after{
+  content: '.';
+  display: inline-block;
+  color: lightgreen;
+  width: 10px;
+  height: 10px;
+}
+.vertical{
+  display: none;
 }
 .dropdown-content{
   position: fixed;
-  top: 8%;
+  top: 10%;
   display: none;
   width: 100%;
   max-width: 100%;
@@ -52,34 +74,14 @@ color: lightgreen;
 hr{
 display: none;
 }
-.top-nav{
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  font-size: larger;
-  background-color: #212529;
-  width: 100%;
-  height: 65px;
-  z-index: 10;
-}
-.top-nav h2::after{
-  content: '.';
-  display: inline-block;
-  color: lightgreen;
-  width: 10px;
-  height: 10px;
-}
-main{
+.swiper{
   line-height: 32px;
   margin: 1rem;
 }
 h1{
   margin-bottom: 38px;
 }
-#home{
+.home{
   align-items: center;
   text-align: center;
   margin: auto;
@@ -133,6 +135,8 @@ span{
   margin: 2rem 0;
 }
 .about-1 img{
+  float: right;
+  margin-right: 1rem;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -140,7 +144,6 @@ span{
   margin: 5rem 0;
   display: grid;
   grid-template-rows: auto auto auto;
-  gap: 5rem;
 }
 .projects-2{
   border-radius: 10px;
@@ -150,9 +153,6 @@ span{
 .projects-2 p{
   text-align: justify;
   hyphens: auto;
-}
-.projects-1 :nth-child(){
-  border: 1px solid lightgreen;
 }
 .projects-1 img{
 width: 100%;
@@ -198,14 +198,158 @@ input, textarea{
 }
 .foo{
   background-color:  #212529;
-  height: 8rem;
-  padding-top: 2rem;
+  height: 6rem;
+  padding-top: 1rem;
   justify-content: center;
   text-align: center;
   line-height: 2rem;
 }
-.foo a{
+.social-links a{
   text-decoration: none;
   color: white;
   padding: .8rem;
 }
+@media screen and (min-width: 768px){
+  .home{
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .hambuger{
+    display: none;
+  }
+  .vertical{
+    display: block;
+  }
+  .vertical ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+  }
+  .vertical li{
+    list-style: none;
+  }
+  .vertical a{
+    text-decoration: none;
+    color: white;
+    padding: 0 1rem;
+  }
+  .vertical i{
+    display: none;
+  }
+  }
+
+  @media screen and (min-width: 1024px){
+    .container{
+      background-color: #212529;
+      padding-top: 0;
+      display: grid;
+      grid-template-columns: 20% 1fr;
+      margin: 0;
+    }
+    .navigation{
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      max-width: 14rem;
+      height: 90vh;
+    }
+    .navigation h2{
+      position: fixed;
+      top: 5%;
+      left: 5%;
+    }
+    .vertical i{
+      display: inline;
+    }
+    .vertical ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+    .vertical a{
+      padding: 1.45rem 2.125rem;
+    }
+    hr{
+      display: block;
+      background: linear-gradient(to right, rgba(144, 238, 144, 0), rgba(144, 238, 144, 0.178), rgba(144, 238, 144, 0));
+      width: 100%;
+      border: none;
+      height: 2px;
+    }
+    .swiper{
+      background-color: #343a40;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+    }
+    .content {
+      display: none;
+    }
+    .content.active {
+      display: block;
+      width: 100%;
+      min-height: 85vh;
+    }
+    .content.active > *{
+      flex: 1;
+    }
+    .home{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+    }
+    .image img{
+      float: left;
+      border-radius: 20px;
+    }
+    .home-1{
+      float: right;
+      text-align: start;
+    }
+    .about-1{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      margin-top: 4rem;
+    }
+    .about-1 img{
+      width: 300px;
+      height: 300px;
+    }
+    .about-flex{
+      display: flex;
+      justify-content: space-between;
+    }
+    .about-2 p{
+      width: 400px;
+      text-align: start;
+      margin-bottom: 2rem;
+    }
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+   }
+    .projects-1{
+      margin: 1rem 0;
+    }
+    .projects-2 {
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .contact-info{
+      margin-bottom: 2rem;
+    }
+    .foo{
+      display: none;
+    }
+  }
