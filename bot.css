@@ -1,0 +1,9 @@
+body {
+    background: url('./images/construction.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    mix-blend-mode: e;
+    z-index: -1;
+}
