@@ -112,18 +112,22 @@ span{
 }
 .btn:hover{
   background-color: rgba(4, 70, 4, 0.849);
+  color: white;
 }
 .first{
   margin: 2rem 0;
 }
-.first a{
+.btn a{
   text-decoration: none;
   color: black;
+}
+.btn a:hover{
+  color: white;
 }
 .chatbot{
   position: fixed;
   bottom: 5%;
-  right: 0;
+  right: 1.5%;
   border: none;
   border-radius: 10px;
   padding: .5rem 1.5rem;
@@ -131,6 +135,26 @@ span{
   color: white;
   font-size: large;
   z-index: 1000;
+}
+
+.status-bar{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.status-bar:hover{
+  animation-play-state: paused;
+  white-space: normal;
+}
+.status-bar a{
+  color: #90EE90;
+  text-decoration: none;
+  font-style: oblique;
+}
+.status-bar a:hover{
+  color: #B2FF66;
 }
 .about-1{
   margin: 2rem 0;
@@ -160,7 +184,7 @@ span{
   text-align: justify;
   hyphens: auto;
 }
-.projects-2 a{
+.projects-2  a, .about-2 a {
   color: rgba(144, 238, 144, 0.671);
   text-decoration: none;
   font-style: italic;
@@ -316,10 +340,11 @@ input, textarea{
       flex: 1;
     }
     .home{
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      margin-top: 4rem;
+      margin: auto;
+      margin-bottom: 4rem;
     }
     .image img{
       float: left;
