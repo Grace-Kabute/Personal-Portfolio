@@ -315,9 +315,6 @@ input, textarea{
     .content.active > *{
       flex: 1;
     }
-    .about{
-      transform: rotateY(180deg) translateZ(50px);
-    }
     .home{
       flex-direction: column;
       justify-content: center;
@@ -370,9 +367,6 @@ input, textarea{
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       text-align: start;
-    }
-    .contact{
-      transform: rotateY(180deg) translateZ(50px);
     }
     .contact-info{
       margin-bottom: 2rem;
